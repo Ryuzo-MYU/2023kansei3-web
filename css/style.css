@@ -1,0 +1,326 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/* 共通 */
+
+body {
+    width: 100%;
+    height: auto;
+    font-size: 67.5%;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    letter-spacing: .05em;
+    background-image: url(../img/bg.jpeg);
+}
+
+header iframe  {
+    position:fixed;
+    z-index:0;
+    height:100vh;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+header .wrapper{
+    z-index:1;
+    text-align: center;
+}
+
+main{
+    position: absolute;
+    z-index:1;
+}
+
+h2{
+    font-size:calc(20px + .2vw);
+    font-weight:800;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+.text_M{
+    font-size:20px;
+    line-height:30px;
+}
+
+.text_S{
+    font-size:14px;
+    line-height:22px;
+}
+
+
+.text_bold{
+    font-weight:600;
+}
+
+
+.text_justify{
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    margin-top:15px;
+    height: 0;
+    overflow: hidden;
+}
+     
+    .ggmap iframe,
+    .ggmap object,
+    .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.bg_yellow{
+    background-color: rgb(255, 227, 67);
+}
+
+.wrap{
+    flex-wrap:wrap;
+}
+
+.mainbox,.mainbox_large{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#abstract img{
+    border-radius:3px;
+    border: .5vw solid white ;
+}
+/* pc版 */
+
+@media screen and (min-width:601px){
+
+header{
+        width:100%;
+        height:500px;
+}
+
+header img{
+    width:30%;
+}
+.wrapper{
+    width:50%;
+    min-width:600px;
+    margin:auto;
+}
+
+.clm2_left,.clm2_right{
+    width:50%;
+}
+.mainbox{
+    height:450px;
+    /* height:auto; */
+}
+
+.mainbox_large{
+    height:650px;
+}
+
+.clm3{
+    width:33.33%;
+}
+
+.wrapper_exptitle{
+    margin:15px auto;
+}
+
+#abstract p{
+    margin-top:25px;
+    width:95%;
+}
+
+#abstract .wrapper_exptitle{
+    display:flex;
+}
+
+#abstract img{
+    width:40%;
+    display:block;
+    margin:0 auto 10px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+#abstract img:hover{
+    transform: scale(.98);
+}
+
+#abstract a{
+    display: block;
+    text-align:center;
+    /* margin-top:10px; */
+}
+
+#abstract .clm2_right{
+    text-align: center;
+}
+
+#abstract .clm2_right i{
+    margin-left:2px;
+}
+
+#imagegallery .clm3{
+    height:50%;
+}
+
+#imagegallery .clm3 img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#works{
+    margin-top:70px;
+}
+
+
+#works .clm3{
+    height:35%;
+    margin:15px 0;
+    text-align: center;
+}
+
+#works .clm3 img{
+    width:90%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#works .clm3 img:hover{
+    transform: scale(.97);
+}
+
+#works .clm3 p{
+    margin-top:10px;
+}
+
+#works .wrapper .wrapper_exptitle{
+    flex-wrap:wrap;
+    display:flex;
+    height:100%;
+}
+
+#access .wrapper_exptitle{
+    display: flex;
+}
+}
+
+/* sp版 */
+@media screen and (max-width:600px) {
+
+    header{
+        z-index:0;
+        height: 45vh;
+     }
+
+     header img{
+        width:70%;
+    }
+
+    header .mainbox{
+        height:45vh;
+    }
+
+    header .mainbox .wrapper{
+        height:100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        z-index:1;
+    }
+    .wrapper{
+        width:80%;
+        margin:auto;
+    }
+    .mainbox,.mainbox_large{
+        padding:50px 0;
+    }
+
+    .clm3{
+        width:100%;
+    }
+    
+    .wrapper_exptitle{
+        margin:5px auto;
+    }
+
+    .nopadding{
+        padding:0;
+    }
+    
+    #abstract p{
+        margin-top:5px;
+    }
+    
+    #abstract img{
+        width:50%;
+        display:block;
+        margin:0 auto 10px;
+    }
+    
+    #abstract a{
+        display: block;
+        text-align:center;
+        /* margin-top:10px; */
+    }
+    
+    #abstract .clm2_right{
+        text-align: center;
+    }
+    
+    #abstract .clm2_right i{
+        margin-left:2px;
+    }
+    
+    #imagegallery .clm3{
+        height:15vh;
+        margin:0;
+        padding:0;
+    }
+    
+    #imagegallery .clm3 img{
+        width: 100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        object-fit: cover;
+    }
+    
+    #works .clm3{
+        height:35%;
+        margin:15px 0;
+        text-align: center;
+    }
+    
+    #works .clm3 img{
+        width:90%;
+    }
+    
+    #works .wrapper .wrapper_exptitle{
+        flex-wrap:wrap;
+        display:flex;
+        height:100%;
+    }
+}
