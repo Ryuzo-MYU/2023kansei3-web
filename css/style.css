@@ -26,6 +26,15 @@ header .wrapper {
   text-align: center;
 }
 
+.main_visual {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/poster.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 main {
   position: absolute;
   z-index: 1;
@@ -101,7 +110,7 @@ a:visited {
 }
 
 .bg_aquamarine {
-  background-color : #C5E4F4;
+  background-color: #c5e4f4;
 }
 
 /* pc版 */
