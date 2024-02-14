@@ -1,0 +1,18 @@
+☆主な変更点
+・マップの画像に対してリンクを設定し、リンクからfancyboxを利用して各作品の概要（まにまに展のものを暫定的に使用）を表示できるようにした
+
+☆細かな点
+・マップのサイズ調整（親要素のwrapperがwidth:50%に指定されていたので、それより若干大きく（width:125%）し、中央に表示されるようにmarginを調整した）
+・imageMapResizer.min.jsの追加（イメージマップは座標を指定して各要素を分割しているため、ページのサイズが変更された場合に座標を変更する必要がある？っぽいので、それを調整してくれるようなjavascriptファイル）
+参考：https://www.kaname-gh.co.jp/web_design/image-map/
+ファイル元：https://github.com/davidjbradshaw/image-map-resizer?tab=readme-ov-file
+
+☆今後の予定
+・imagemapsterの利用
+➡イメージマップはareaタグを利用しているが、areaタグにはhoverクラスが無いため、ホバーした際に変化を付けたいときには変化前の画像と変化後の画像を用意してjsの方で切り替える必要がある（らしい）imagemapsterを利用することで、本来リンク毎に用意しなければならない変化後の画像を一枚で済ませられるほか（例えば、リンクA・Bがあった時、従来ではリンクAの変化後の画像・リンクBの変化後の画像をそれぞれ用意しなければならないところ、リンクA・Bそれぞれが変化している一枚の画像でOK）、いろいろ楽っぽいので導入していきたい
+
+（一応補足）git add --all時に以下の表示があった（多分問題ないと思うけど念のため）
+warning: in the working copy of 'js/jquery.imagemapster.js', LF will be replaced by CRLF the next time Git touches it
+
+○デザイン班には変化後の画像を用意してもらう必要がある（かも）
+→マップに各作品のアイコンがあった方がいいと思う（可能ならマップのイラレデータが欲しい）

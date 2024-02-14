@@ -18,6 +18,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/FLAutoKerning.js"></script>
     <script src="js/rellax.min.js"></script>
+    <!-- <script src="js/jquery.imagemapster.js"></script> -->
     <script language="javascript">
       function init() {
         FLAutoKerning.process($("h1"), FLAutoKerning.DEFAULT_KERNING_INFO);
@@ -91,6 +92,18 @@
           <div class="wrapper">
             <h2 class="font_bold">展示作品</h2>
             <p>ここに会場マップを入れる</p>
+            <p>
+              <img src="img/map.png" usemap="#ImageMap" alt="会場マップ" style="width: 125%; margin: 0 -12.5%;">
+              <map name="ImageMap">
+                <area shape="rect" coords="62,281,180,415" href="img/pop-blow.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="96,125,215,258" href="img/pop-color.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="241,45,362,198" href="img/pop-control.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="372,45,495,196" href="img/pop-link.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="516,45,695,181" href="img/pop-memory.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="371,333,643,449" href="img/pop-blow.png" alt="" data-fancybox="gallery"/>
+                <area shape="rect" coords="801,47,961,526" href="img/pop-color.png" alt="" data-fancybox="gallery"/>
+              </map>
+            </p>
             <div class="wrapper_exptitle"></div>
           </div>
         </div>
@@ -157,8 +170,10 @@
         }
       </script>
       <script src="js/sal.js"></script>
+      <script src="js/imageMapResizer.min.js"></script>
       <script>
         sal();
+        imageMapResize();
       </script>
       <script src="js/jquery.fancybox.min.js"></script>
     </body>
