@@ -126,7 +126,7 @@ a:visited {
   .wrapper {
     width: 50%;
     min-width: 600px;
-    margin: auto;
+    margin: 1em;
   }
 
   .clm2_left,
