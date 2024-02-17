@@ -29,7 +29,7 @@ header .wrapper {
 .main_visual {
   width: 100%;
 }
-.main_visual img{
+.main_visual img {
   width: 100%;
 }
 
@@ -111,6 +111,11 @@ a:visited {
   background-color: #c5e4f4;
 }
 
+.content {
+  width: 100%;
+  margin: 1em;
+}
+
 /* pc版 */
 
 @media screen and (min-width: 601px) {
@@ -135,7 +140,7 @@ a:visited {
   }
   .mainbox {
     /* height: 450px; */
-    height:auto;
+    height: auto;
   }
 
   .mainbox_large {
