@@ -113,7 +113,7 @@ a:visited {
 
 .content {
   width: 100%;
-  margin: 1em;
+  /* PC版用のレイアウトのみ margin 1em */
 }
 
 /* pc版 */
@@ -231,6 +231,10 @@ a:visited {
 
   #access .wrapper_exptitle {
     display: flex;
+  }
+
+  .content {
+    margin: 1em;
   }
 }
 
